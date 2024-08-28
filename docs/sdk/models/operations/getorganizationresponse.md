@@ -1,5 +1,15 @@
 # GetOrganizationResponse
 
+## Example Usage
+
+```typescript
+import { GetOrganizationResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetOrganizationResponse = {
+    message: "<value>",
+    statusCode: 297437,
+};
+```
 
 ## Supported Types
 

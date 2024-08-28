@@ -1,5 +1,15 @@
 # FileT
 
+## Example Usage
+
+```typescript
+import { FileT } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: FileT = {
+    content: new TextEncoder().encode("0xfebbF5e89d"),
+    fileName: "your_file_here",
+};
+```
 
 ## Fields
 

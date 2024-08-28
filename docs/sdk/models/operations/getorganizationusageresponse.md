@@ -1,5 +1,26 @@
 # GetOrganizationUsageResponse
 
+## Example Usage
+
+```typescript
+import { GetOrganizationUsageResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetOrganizationUsageResponse = {
+    allowedLanguages: ["<value>"],
+    totalAllowedLanguages: 813798,
+    usage: [
+        {
+            accessible: false,
+            accessibleFeatures: ["<value>"],
+            genLockIds: ["<value>"],
+            language: "<value>",
+            numberOfOperations: 411820,
+            usedFeatures: ["<value>"],
+            workspaces: ["<value>"],
+        },
+    ],
+};
+```
 
 ## Supported Types
 

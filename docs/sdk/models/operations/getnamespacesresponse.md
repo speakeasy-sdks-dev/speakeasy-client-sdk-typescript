@@ -1,5 +1,15 @@
 # GetNamespacesResponse
 
+## Example Usage
+
+```typescript
+import { GetNamespacesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetNamespacesResponse = {
+    message: "<value>",
+    statusCode: 264730,
+};
+```
 
 ## Supported Types
 

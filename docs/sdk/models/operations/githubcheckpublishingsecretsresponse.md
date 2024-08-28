@@ -1,5 +1,12 @@
 # GithubCheckPublishingSecretsResponse
 
+## Example Usage
+
+```typescript
+import { GithubCheckPublishingSecretsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GithubCheckPublishingSecretsResponse = {};
+```
 
 ## Supported Types
 

@@ -2,6 +2,13 @@
 
 Apply options
 
+## Example Usage
+
+```typescript
+import { ApplyOperationIDsRequestBody } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: ApplyOperationIDsRequestBody = {};
+```
 
 ## Fields
 

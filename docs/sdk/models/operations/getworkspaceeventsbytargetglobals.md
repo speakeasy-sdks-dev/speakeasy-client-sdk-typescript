@@ -1,5 +1,12 @@
 # GetWorkspaceEventsByTargetGlobals
 
+## Example Usage
+
+```typescript
+import { GetWorkspaceEventsByTargetGlobals } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetWorkspaceEventsByTargetGlobals = {};
+```
 
 ## Fields
 

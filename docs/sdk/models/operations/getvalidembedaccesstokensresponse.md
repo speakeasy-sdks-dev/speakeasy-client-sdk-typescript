@@ -1,5 +1,15 @@
 # GetValidEmbedAccessTokensResponse
 
+## Example Usage
+
+```typescript
+import { GetValidEmbedAccessTokensResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetValidEmbedAccessTokensResponse = {
+    message: "<value>",
+    statusCode: 551816,
+};
+```
 
 ## Supported Types
 

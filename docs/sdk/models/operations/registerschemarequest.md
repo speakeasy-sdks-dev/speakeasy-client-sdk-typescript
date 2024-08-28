@@ -1,5 +1,19 @@
 # RegisterSchemaRequest
 
+## Example Usage
+
+```typescript
+import { RegisterSchemaRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+import { openAsBlob } from "node:fs";
+
+let value: RegisterSchemaRequest = {
+    apiID: "<value>",
+    versionID: "<value>",
+    requestBody: {
+        file: await openAsBlob("./sample-file"),
+    },
+};
+```
 
 ## Fields
 

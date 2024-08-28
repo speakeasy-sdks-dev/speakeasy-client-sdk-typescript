@@ -1,5 +1,18 @@
 # SuggestOperationIDsRequest
 
+## Example Usage
+
+```typescript
+import { SuggestOperationIDsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+import { openAsBlob } from "node:fs";
+
+let value: SuggestOperationIDsRequest = {
+    xSessionId: "<value>",
+    requestBody: {
+        schema: await openAsBlob("./sample-file"),
+    },
+};
+```
 
 ## Fields
 

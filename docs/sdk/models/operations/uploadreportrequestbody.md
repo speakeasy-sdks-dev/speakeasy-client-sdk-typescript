@@ -2,6 +2,17 @@
 
 The report file to upload provided as a multipart/form-data file segment.
 
+## Example Usage
+
+```typescript
+import { UploadReportRequestBody } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+import { openAsBlob } from "node:fs";
+
+let value: UploadReportRequestBody = {
+    data: {},
+    file: await openAsBlob("./sample-file"),
+};
+```
 
 ## Fields
 

@@ -1,5 +1,15 @@
 # GetTagsResponse
 
+## Example Usage
+
+```typescript
+import { GetTagsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetTagsResponse = {
+    message: "<value>",
+    statusCode: 828940,
+};
+```
 
 ## Supported Types
 

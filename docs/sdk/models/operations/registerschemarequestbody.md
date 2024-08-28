@@ -2,6 +2,16 @@
 
 The schema file to upload provided as a multipart/form-data file segment.
 
+## Example Usage
+
+```typescript
+import { RegisterSchemaRequestBody } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+import { openAsBlob } from "node:fs";
+
+let value: RegisterSchemaRequestBody = {
+    file: await openAsBlob("./sample-file"),
+};
+```
 
 ## Fields
 
