@@ -2,6 +2,18 @@
 
 A response to configure GitHub code samples
 
+## Example Usage
+
+```typescript
+import { GithubConfigureCodeSamplesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: GithubConfigureCodeSamplesResponse = {
+    codeSampleOverlayRegistryURL: "<value>",
+    source: {
+        location: "<value>",
+    },
+};
+```
 
 ## Fields
 

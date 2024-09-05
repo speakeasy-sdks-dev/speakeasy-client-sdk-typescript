@@ -1,5 +1,15 @@
 # GetActionRequest
 
+## Example Usage
+
+```typescript
+import { GetActionRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetActionRequest = {
+    org: "<value>",
+    repo: "<value>",
+};
+```
 
 ## Fields
 

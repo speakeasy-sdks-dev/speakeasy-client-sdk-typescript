@@ -1,5 +1,12 @@
 # GeneratePostmanCollectionForApiEndpointResponse
 
+## Example Usage
+
+```typescript
+import { GeneratePostmanCollectionForApiEndpointResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+// No examples available for this model
+```
 
 ## Supported Types
 

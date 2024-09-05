@@ -1,5 +1,21 @@
 # GetSchemaDiffResponse
 
+## Example Usage
+
+```typescript
+import { GetSchemaDiffResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetSchemaDiffResponse = {
+    additions: ["<value>"],
+    deletions: ["<value>"],
+    modifications: {
+        key: {
+            from: "<value>",
+            to: "<value>",
+        },
+    },
+};
+```
 
 ## Supported Types
 

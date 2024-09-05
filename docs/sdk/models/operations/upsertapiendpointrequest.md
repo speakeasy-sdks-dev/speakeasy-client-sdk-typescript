@@ -1,5 +1,24 @@
 # UpsertApiEndpointRequest
 
+## Example Usage
+
+```typescript
+import { UpsertApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: UpsertApiEndpointRequest = {
+    apiID: "<value>",
+    versionID: "<value>",
+    apiEndpointID: "<value>",
+    apiEndpoint: {
+        apiEndpointId: "<value>",
+        description: "Synergized holistic instruction set",
+        displayName: "Whitney.Bednar",
+        method: "<value>",
+        path: "/usr/lib",
+        versionId: "<value>",
+    },
+};
+```
 
 ## Fields
 
