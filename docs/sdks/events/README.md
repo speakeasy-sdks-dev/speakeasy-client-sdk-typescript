@@ -90,8 +90,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## getWorkspaceTargets
 
@@ -167,8 +166,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## postWorkspaceEvents
 
@@ -272,8 +270,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## searchWorkspaceEvents
 
@@ -349,4 +346,4 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
+| errors.SDKError | 4xx-5xx         | \*/\*           |

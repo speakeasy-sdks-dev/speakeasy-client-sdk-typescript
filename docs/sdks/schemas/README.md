@@ -98,8 +98,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## downloadSchema
 
@@ -181,8 +180,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## downloadSchemaRevision
 
@@ -266,8 +264,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## getSchema
 
@@ -350,8 +347,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## getSchemaDiff
 
@@ -437,8 +433,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## getSchemaRevision
 
@@ -523,8 +518,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## getSchemas
 
@@ -607,8 +601,7 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
-
+| errors.SDKError | 4xx-5xx         | \*/\*           |
 
 ## registerSchema
 
@@ -699,4 +692,4 @@ run();
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
-| errors.SDKError | 4xx-5xx         | */*             |
+| errors.SDKError | 4xx-5xx         | \*/\*           |
