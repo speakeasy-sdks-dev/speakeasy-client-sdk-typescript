@@ -1,5 +1,12 @@
 # GetWorkspaceRequest
 
+## Example Usage
+
+```typescript
+import { GetWorkspaceRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetWorkspaceRequest = {};
+```
 
 ## Fields
 

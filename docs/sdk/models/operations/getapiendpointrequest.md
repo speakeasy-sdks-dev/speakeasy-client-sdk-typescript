@@ -1,5 +1,16 @@
 # GetApiEndpointRequest
 
+## Example Usage
+
+```typescript
+import { GetApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetApiEndpointRequest = {
+    apiID: "<value>",
+    versionID: "<value>",
+    apiEndpointID: "<value>",
+};
+```
 
 ## Fields
 

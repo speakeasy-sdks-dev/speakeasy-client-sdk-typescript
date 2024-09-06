@@ -1,5 +1,15 @@
 # GetSchemaRequest
 
+## Example Usage
+
+```typescript
+import { GetSchemaRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetSchemaRequest = {
+    apiID: "<value>",
+    versionID: "<value>",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # FetchPublishingPRsResponse
 
+## Example Usage
+
+```typescript
+import { FetchPublishingPRsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: FetchPublishingPRsResponse = {};
+```
 
 ## Supported Types
 

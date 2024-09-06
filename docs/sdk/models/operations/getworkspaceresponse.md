@@ -1,5 +1,15 @@
 # GetWorkspaceResponse
 
+## Example Usage
+
+```typescript
+import { GetWorkspaceResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetWorkspaceResponse = {
+    message: "<value>",
+    statusCode: 881736,
+};
+```
 
 ## Supported Types
 

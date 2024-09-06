@@ -1,5 +1,15 @@
 # GetUserResponse
 
+## Example Usage
+
+```typescript
+import { GetUserResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetUserResponse = {
+    message: "<value>",
+    statusCode: 183191,
+};
+```
 
 ## Supported Types
 
