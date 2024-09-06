@@ -1,5 +1,12 @@
 # ApplyOperationIDsResponse
 
+## Example Usage
+
+```typescript
+import { ApplyOperationIDsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+// No examples available for this model
+```
 
 ## Supported Types
 

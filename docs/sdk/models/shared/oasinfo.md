@@ -1,5 +1,18 @@
 # OASInfo
 
+## Example Usage
+
+```typescript
+import { OASInfo } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OASInfo = {
+    description: "Robust bifurcated strategy",
+    license: {},
+    summary: "<value>",
+    title: "<value>",
+    version: "<value>",
+};
+```
 
 ## Fields
 

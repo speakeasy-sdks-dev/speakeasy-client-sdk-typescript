@@ -1,5 +1,15 @@
 # GetAllApiVersionsResponse
 
+## Example Usage
+
+```typescript
+import { GetAllApiVersionsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetAllApiVersionsResponse = {
+    message: "<value>",
+    statusCode: 315428,
+};
+```
 
 ## Supported Types
 

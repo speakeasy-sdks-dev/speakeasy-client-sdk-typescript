@@ -2,6 +2,24 @@
 
 Filters are used to query requests.
 
+## Example Usage
+
+```typescript
+import { Filters } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Filters = {
+    filters: [
+        {
+            key: "<key>",
+            operator: "<value>",
+            value: "<value>",
+        },
+    ],
+    limit: 18789,
+    offset: 324141,
+    operator: "<value>",
+};
+```
 
 ## Fields
 

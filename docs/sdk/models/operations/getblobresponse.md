@@ -1,5 +1,12 @@
 # GetBlobResponse
 
+## Example Usage
+
+```typescript
+import { GetBlobResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+// No examples available for this model
+```
 
 ## Supported Types
 
