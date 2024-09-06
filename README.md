@@ -1,7 +1,35 @@
 # @speakeasy-api/speakeasy-client-sdk-typescript
 
+<!-- Start Summary [summary] -->
+## Summary
+
+Speakeasy API: The Speakeasy API allows teams to manage common operations with their APIs
+
+For more information about the API: [The Speakeasy Platform Documentation](/docs)
+<!-- End Summary [summary] -->
+
+<!-- Start Table of Contents [toc] -->
+## Table of Contents
+
+* [SDK Installation](#sdk-installation)
+* [Requirements](#requirements)
+* [SDK Example Usage](#sdk-example-usage)
+* [Available Resources and Operations](#available-resources-and-operations)
+* [Standalone functions](#standalone-functions)
+* [Global Parameters](#global-parameters)
+* [File uploads](#file-uploads)
+* [Retries](#retries)
+* [Error Handling](#error-handling)
+* [Server Selection](#server-selection)
+* [Custom HTTP Client](#custom-http-client)
+* [Authentication](#authentication)
+* [Debugging](#debugging)
+<!-- End Table of Contents [toc] -->
+
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
+
+The SDK can be installed with either [npm](https://www.npmjs.com/), [pnpm](https://pnpm.io/), [bun](https://bun.sh/) or [yarn](https://classic.yarnpkg.com/en/) package managers.
 
 ### NPM
 
@@ -39,7 +67,11 @@ yarn add @speakeasy-api/speakeasy-client-sdk-typescript zod
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     const result = await speakeasy.apis.getApis({});
@@ -192,7 +224,11 @@ Validation errors can also occur when either method arguments or data returned f
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 import { SDKValidationError } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/errors";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     let result;
@@ -201,6 +237,9 @@ async function run() {
             apiID: "<value>",
             versionID: "<value>",
         });
+
+        // Handle the result
+        console.log(result);
     } catch (err) {
         switch (true) {
             case err instanceof SDKValidationError: {
@@ -215,9 +254,6 @@ async function run() {
             }
         }
     }
-
-    // Handle the result
-    console.log(result);
 }
 
 run();
@@ -243,6 +279,9 @@ import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
 const speakeasy = new Speakeasy({
     server: "prod",
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
 });
 
 async function run() {
@@ -269,6 +308,9 @@ import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
 const speakeasy = new Speakeasy({
     serverURL: "https://api.prod.speakeasyapi.dev",
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
 });
 
 async function run() {
@@ -355,7 +397,11 @@ You can set the security parameters through the `security` optional parameter wh
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     const result = await speakeasy.apis.deleteApi({
@@ -371,6 +417,94 @@ run();
 
 ```
 <!-- End Authentication [security] -->
+
+<!-- Start Standalone functions [standalone-funcs] -->
+## Standalone functions
+
+All the methods listed above are available as standalone functions. These
+functions are ideal for use in applications running in the browser, serverless
+runtimes or other environments where application bundle size is a primary
+concern. When using a bundler to build your application, all unused
+functionality will be either excluded from the final bundle or tree-shaken away.
+
+To read more about standalone functions, check [FUNCTIONS.md](./FUNCTIONS.md).
+
+<details>
+
+<summary>Available standalone functions</summary>
+
+- [apiEndpointsDeleteApiEndpoint](docs/sdks/apiendpoints/README.md#deleteapiendpoint)
+- [apiEndpointsFindApiEndpoint](docs/sdks/apiendpoints/README.md#findapiendpoint)
+- [apiEndpointsGenerateOpenApiSpecForApiEndpoint](docs/sdks/apiendpoints/README.md#generateopenapispecforapiendpoint)
+- [apiEndpointsGeneratePostmanCollectionForApiEndpoint](docs/sdks/apiendpoints/README.md#generatepostmancollectionforapiendpoint)
+- [apiEndpointsGetAllApiEndpoints](docs/sdks/apiendpoints/README.md#getallapiendpoints)
+- [apiEndpointsGetAllForVersionApiEndpoints](docs/sdks/apiendpoints/README.md#getallforversionapiendpoints)
+- [apiEndpointsGetApiEndpoint](docs/sdks/apiendpoints/README.md#getapiendpoint)
+- [apiEndpointsUpsertApiEndpoint](docs/sdks/apiendpoints/README.md#upsertapiendpoint)
+- [apisDeleteApi](docs/sdks/apis/README.md#deleteapi)
+- [apisGenerateOpenApiSpec](docs/sdks/apis/README.md#generateopenapispec)
+- [apisGeneratePostmanCollection](docs/sdks/apis/README.md#generatepostmancollection)
+- [apisGetAllApiVersions](docs/sdks/apis/README.md#getallapiversions)
+- [apisGetApis](docs/sdks/apis/README.md#getapis)
+- [apisUpsertApi](docs/sdks/apis/README.md#upsertapi)
+- [artifactsGetBlob](docs/sdks/artifacts/README.md#getblob)
+- [artifactsGetManifest](docs/sdks/artifacts/README.md#getmanifest)
+- [artifactsGetNamespaces](docs/sdks/artifacts/README.md#getnamespaces)
+- [artifactsGetOASSummary](docs/sdks/artifacts/README.md#getoassummary)
+- [artifactsGetRevisions](docs/sdks/artifacts/README.md#getrevisions)
+- [artifactsGetTags](docs/sdks/artifacts/README.md#gettags)
+- [artifactsPostTags](docs/sdks/artifacts/README.md#posttags)
+- [artifactsPreflight](docs/sdks/artifacts/README.md#preflight)
+- [authGetAccessToken](docs/sdks/auth/README.md#getaccesstoken)
+- [authGetUser](docs/sdks/auth/README.md#getuser)
+- [authGetWorkspaceAccess](docs/sdks/auth/README.md#getworkspaceaccess)
+- [authValidateApiKey](docs/sdks/auth/README.md#validateapikey)
+- [embedsGetEmbedAccessToken](docs/sdks/embeds/README.md#getembedaccesstoken)
+- [embedsGetValidEmbedAccessTokens](docs/sdks/embeds/README.md#getvalidembedaccesstokens)
+- [embedsRevokeEmbedAccessToken](docs/sdks/embeds/README.md#revokeembedaccesstoken)
+- [eventsGetWorkspaceEventsByTarget](docs/sdks/events/README.md#getworkspaceeventsbytarget)
+- [eventsGetWorkspaceTargets](docs/sdks/events/README.md#getworkspacetargets)
+- [eventsPostWorkspaceEvents](docs/sdks/events/README.md#postworkspaceevents)
+- [eventsSearchWorkspaceEvents](docs/sdks/events/README.md#searchworkspaceevents)
+- [githubCheckAccess](docs/sdks/github/README.md#checkaccess)
+- [githubConfigureCodeSamples](docs/sdks/github/README.md#configurecodesamples)
+- [githubConfigureMintlifyRepo](docs/sdks/github/README.md#configuremintlifyrepo)
+- [githubConfigureTarget](docs/sdks/github/README.md#configuretarget)
+- [githubFetchPublishingPRs](docs/sdks/github/README.md#fetchpublishingprs)
+- [githubGetAction](docs/sdks/github/README.md#getaction)
+- [githubGithubCheckPublishingSecrets](docs/sdks/github/README.md#githubcheckpublishingsecrets)
+- [githubGithubStorePublishingSecrets](docs/sdks/github/README.md#githubstorepublishingsecrets)
+- [githubTriggerAction](docs/sdks/github/README.md#triggeraction)
+- [metadataDeleteVersionMetadata](docs/sdks/metadata/README.md#deleteversionmetadata)
+- [metadataGetVersionMetadata](docs/sdks/metadata/README.md#getversionmetadata)
+- [metadataInsertVersionMetadata](docs/sdks/metadata/README.md#insertversionmetadata)
+- [organizationsCreateFreeTrial](docs/sdks/organizations/README.md#createfreetrial)
+- [organizationsGetOrganizationUsage](docs/sdks/organizations/README.md#getorganizationusage)
+- [organizationsGetOrganization](docs/sdks/organizations/README.md#getorganization)
+- [organizationsGetOrganizations](docs/sdks/organizations/README.md#getorganizations)
+- [reportsGetChangesReportSignedUrl](docs/sdks/reports/README.md#getchangesreportsignedurl)
+- [reportsGetLintingReportSignedUrl](docs/sdks/reports/README.md#getlintingreportsignedurl)
+- [reportsUploadReport](docs/sdks/reports/README.md#uploadreport)
+- [requestsGenerateRequestPostmanCollection](docs/sdks/requests/README.md#generaterequestpostmancollection)
+- [requestsGetRequestFromEventLog](docs/sdks/requests/README.md#getrequestfromeventlog)
+- [requestsQueryEventLog](docs/sdks/requests/README.md#queryeventlog)
+- [schemasDeleteSchema](docs/sdks/schemas/README.md#deleteschema)
+- [schemasDownloadSchemaRevision](docs/sdks/schemas/README.md#downloadschemarevision)
+- [schemasDownloadSchema](docs/sdks/schemas/README.md#downloadschema)
+- [schemasGetSchemaDiff](docs/sdks/schemas/README.md#getschemadiff)
+- [schemasGetSchemaRevision](docs/sdks/schemas/README.md#getschemarevision)
+- [schemasGetSchema](docs/sdks/schemas/README.md#getschema)
+- [schemasGetSchemas](docs/sdks/schemas/README.md#getschemas)
+- [schemasRegisterSchema](docs/sdks/schemas/README.md#registerschema)
+- [shortURLsCreate](docs/sdks/shorturls/README.md#create)
+- [suggestApplyOperationIDs](docs/sdks/suggest/README.md#applyoperationids)
+- [suggestSuggestOperationIDsRegistry](docs/sdks/suggest/README.md#suggestoperationidsregistry)
+- [suggestSuggestOperationIDs](docs/sdks/suggest/README.md#suggestoperationids)
+- [workspacesGetWorkspace](docs/sdks/workspaces/README.md#getworkspace)
+
+
+</details>
+<!-- End Standalone functions [standalone-funcs] -->
 
 <!-- Start Global Parameters [global-parameters] -->
 ## Global Parameters
@@ -394,7 +528,11 @@ The following global parameter is available.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     const result = await speakeasy.workspaces.getWorkspace({});
@@ -417,7 +555,11 @@ To change the default retry strategy for a single API call, simply provide a ret
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     const result = await speakeasy.apis.deleteApi(
@@ -462,6 +604,9 @@ const speakeasy = new Speakeasy({
         },
         retryConnectionErrors: false,
     },
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
 });
 
 async function run() {
@@ -503,7 +648,11 @@ Certain SDK methods accept files as part of a multi-part request. It is possible
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 import { openAsBlob } from "node:fs";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+    security: {
+        apiKey: "<YOUR_API_KEY_HERE>",
+    },
+});
 
 async function run() {
     const result = await speakeasy.schemas.registerSchema({
@@ -522,6 +671,23 @@ run();
 
 ```
 <!-- End File uploads [file-upload] -->
+
+<!-- Start Debugging [debug] -->
+## Debugging
+
+You can setup your SDK to emit debug logs for SDK requests and responses.
+
+You can pass a logger that matches `console`'s interface as an SDK option.
+
+> [!WARNING]
+> Beware that debug logging will reveal secrets, like API tokens in headers, in log messages printed to a console or files. It's recommended to use this feature only during local development and not in production.
+
+```typescript
+import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
+
+const sdk = new Speakeasy({ debugLogger: console });
+```
+<!-- End Debugging [debug] -->
 
 <!-- Placeholder for Future Speakeasy SDK Sections -->
 

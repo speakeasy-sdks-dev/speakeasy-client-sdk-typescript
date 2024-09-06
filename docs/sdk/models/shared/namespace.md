@@ -2,6 +2,18 @@
 
 A namespace contains many revisions.
 
+## Example Usage
+
+```typescript
+import { Namespace } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Namespace = {
+    createdAt: new Date("2023-06-11T01:19:10.260Z"),
+    id: "<id>",
+    name: "<value>",
+    updatedAt: new Date("2023-09-15T13:50:39.138Z"),
+};
+```
 
 ## Fields
 

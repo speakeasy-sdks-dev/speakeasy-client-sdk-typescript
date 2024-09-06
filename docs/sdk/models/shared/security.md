@@ -1,5 +1,12 @@
 # Security
 
+## Example Usage
+
+```typescript
+import { Security } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Security = {};
+```
 
 ## Fields
 

@@ -4,6 +4,7 @@
 
 import * as shared from "../sdk/models/shared/index.js";
 import { HTTPClient } from "./http.js";
+import { Logger } from "./logger.js";
 import { RetryConfig } from "./retries.js";
 import { Params, pathToFunc } from "./url.js";
 
@@ -40,6 +41,7 @@ export type SDKOptions = {
      */
     retryConfig?: RetryConfig;
     timeoutMs?: number;
+    debugLogger?: Logger;
 };
 
 export function serverURLFromOptions(options: SDKOptions): URL | null {
@@ -60,7 +62,7 @@ export const SDK_METADATA = {
     language: "typescript",
     openapiDocVersion: "0.4.0 .",
     sdkVersion: "4.0.0-rc.1",
-    genVersion: "2.382.0",
+    genVersion: "2.411.1",
     userAgent:
-        "speakeasy-sdk/typescript 4.0.0-rc.1 2.382.0 0.4.0 . @speakeasy-api/speakeasy-client-sdk-typescript",
+        "speakeasy-sdk/typescript 4.0.0-rc.1 2.411.1 0.4.0 . @speakeasy-api/speakeasy-client-sdk-typescript",
 } as const;
