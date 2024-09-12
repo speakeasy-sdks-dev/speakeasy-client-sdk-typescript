@@ -192,7 +192,7 @@ const speakeasy = new Speakeasy({
 async function run() {
   const result = await speakeasy.reports.uploadReport({
     data: {},
-    file: await openAsBlob("./sample-file"),
+    file: await openAsBlob("example.file"),
   });
   
   // Handle the result
@@ -222,7 +222,7 @@ const speakeasy = new SpeakeasyCore({
 async function run() {
   const res = await reportsUploadReport(speakeasy, {
     data: {},
-    file: await openAsBlob("./sample-file"),
+    file: await openAsBlob("example.file"),
   });
 
   if (!res.ok) {

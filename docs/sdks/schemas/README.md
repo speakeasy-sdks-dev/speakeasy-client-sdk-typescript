@@ -632,7 +632,7 @@ async function run() {
     apiID: "<value>",
     versionID: "<value>",
     requestBody: {
-      file: await openAsBlob("./sample-file"),
+      file: await openAsBlob("example.file"),
     },
   });
   
@@ -665,7 +665,7 @@ async function run() {
     apiID: "<value>",
     versionID: "<value>",
     requestBody: {
-      file: await openAsBlob("./sample-file"),
+      file: await openAsBlob("example.file"),
     },
   });
 

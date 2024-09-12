@@ -112,7 +112,7 @@ async function run() {
   const result = await speakeasy.suggest.suggestOperationIDs({
     xSessionId: "<value>",
     requestBody: {
-      schema: await openAsBlob("./sample-file"),
+      schema: await openAsBlob("example.file"),
     },
   });
   
@@ -144,7 +144,7 @@ async function run() {
   const res = await suggestSuggestOperationIDs(speakeasy, {
     xSessionId: "<value>",
     requestBody: {
-      schema: await openAsBlob("./sample-file"),
+      schema: await openAsBlob("example.file"),
     },
   });
 
