@@ -1,5 +1,15 @@
 # GetSchemaResponse
 
+## Example Usage
+
+```typescript
+import { GetSchemaResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetSchemaResponse = {
+  message: "<value>",
+  statusCode: 216822,
+};
+```
 
 ## Supported Types
 

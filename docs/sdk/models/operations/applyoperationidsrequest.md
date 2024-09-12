@@ -1,5 +1,14 @@
 # ApplyOperationIDsRequest
 
+## Example Usage
+
+```typescript
+import { ApplyOperationIDsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: ApplyOperationIDsRequest = {
+  xSessionId: "<value>",
+};
+```
 
 ## Fields
 

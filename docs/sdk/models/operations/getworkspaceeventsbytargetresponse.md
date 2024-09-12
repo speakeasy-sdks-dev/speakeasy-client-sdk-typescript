@@ -1,5 +1,15 @@
 # GetWorkspaceEventsByTargetResponse
 
+## Example Usage
+
+```typescript
+import { GetWorkspaceEventsByTargetResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetWorkspaceEventsByTargetResponse = {
+  message: "<value>",
+  statusCode: 692532,
+};
+```
 
 ## Supported Types
 

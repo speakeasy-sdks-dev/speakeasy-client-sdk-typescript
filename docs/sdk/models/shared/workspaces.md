@@ -1,5 +1,12 @@
 # Workspaces
 
+## Example Usage
+
+```typescript
+import { Workspaces } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Workspaces = {};
+```
 
 ## Fields
 

@@ -1,5 +1,12 @@
 # SuggestOperationIDsRequest
 
+## Example Usage
+
+```typescript
+import { SuggestOperationIDsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+// No examples available for this model
+```
 
 ## Fields
 

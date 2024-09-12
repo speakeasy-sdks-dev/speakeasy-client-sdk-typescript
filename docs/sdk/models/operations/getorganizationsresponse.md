@@ -1,5 +1,19 @@
 # GetOrganizationsResponse
 
+## Example Usage
+
+```typescript
+import { GetOrganizationsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetOrganizationsResponse = [
+  {
+    accountType: "scale-up",
+    id: "<id>",
+    name: "<value>",
+    telemetryDisabled: false,
+  },
+];
+```
 
 ## Supported Types
 

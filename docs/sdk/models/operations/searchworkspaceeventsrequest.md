@@ -1,5 +1,12 @@
 # SearchWorkspaceEventsRequest
 
+## Example Usage
+
+```typescript
+import { SearchWorkspaceEventsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: SearchWorkspaceEventsRequest = {};
+```
 
 ## Fields
 

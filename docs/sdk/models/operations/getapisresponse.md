@@ -1,5 +1,15 @@
 # GetApisResponse
 
+## Example Usage
+
+```typescript
+import { GetApisResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetApisResponse = {
+  message: "<value>",
+  statusCode: 363711,
+};
+```
 
 ## Supported Types
 

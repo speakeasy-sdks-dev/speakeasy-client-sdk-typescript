@@ -1,5 +1,26 @@
 # PostWorkspaceEventsRequest
 
+## Example Usage
+
+```typescript
+import { PostWorkspaceEventsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: PostWorkspaceEventsRequest = {
+  requestBody: [
+    {
+      createdAt: new Date("2023-07-04T10:50:11.661Z"),
+      executionId: "<value>",
+      id: "<id>",
+      interactionType: "TOMBSTONE",
+      localStartedAt: new Date("2024-11-13T20:49:26.617Z"),
+      speakeasyApiKeyName: "<value>",
+      speakeasyVersion: "<value>",
+      success: false,
+      workspaceId: "<value>",
+    },
+  ],
+};
+```
 
 ## Fields
 

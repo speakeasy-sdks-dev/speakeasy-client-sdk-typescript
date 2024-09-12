@@ -1,5 +1,16 @@
 # SuggestOperationIDsRegistryRequest
 
+## Example Usage
+
+```typescript
+import { SuggestOperationIDsRegistryRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: SuggestOperationIDsRegistryRequest = {
+  xSessionId: "<value>",
+  namespaceName: "<value>",
+  revisionReference: "<value>",
+};
+```
 
 ## Fields
 

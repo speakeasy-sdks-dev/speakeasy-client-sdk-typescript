@@ -1,5 +1,17 @@
 # DeleteVersionMetadataRequest
 
+## Example Usage
+
+```typescript
+import { DeleteVersionMetadataRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: DeleteVersionMetadataRequest = {
+  apiID: "<value>",
+  versionID: "<value>",
+  metaKey: "<value>",
+  metaValue: "<value>",
+};
+```
 
 ## Fields
 

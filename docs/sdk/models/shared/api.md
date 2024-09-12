@@ -2,6 +2,20 @@
 
 An Api is representation of a API (a collection of API Endpoints) within the Speakeasy Platform.
 
+## Example Usage
+
+```typescript
+import { Api } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Api = {
+  apiId: "<value>",
+  createdAt: new Date("2023-10-12T18:11:05.242Z"),
+  description: "Realigned static matrix",
+  updatedAt: new Date("2024-07-29T07:24:05.705Z"),
+  versionId: "<value>",
+  workspaceId: "<value>",
+};
+```
 
 ## Fields
 

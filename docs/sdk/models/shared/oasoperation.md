@@ -1,5 +1,20 @@
 # OASOperation
 
+## Example Usage
+
+```typescript
+import { OASOperation } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OASOperation = {
+  description: "Ameliorated explicit service-desk",
+  method: "<value>",
+  operationId: "<value>",
+  path: "/var/spool",
+  tags: [
+    "<value>",
+  ],
+};
+```
 
 ## Fields
 

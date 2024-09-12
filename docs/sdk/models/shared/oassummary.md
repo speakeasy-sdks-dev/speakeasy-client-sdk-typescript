@@ -1,5 +1,31 @@
 # OASSummary
 
+## Example Usage
+
+```typescript
+import { OASSummary } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OASSummary = {
+  info: {
+    description: "Integrated upward-trending service-desk",
+    license: {},
+    summary: "<value>",
+    title: "<value>",
+    version: "<value>",
+  },
+  operations: [
+    {
+      description: "Centralized encompassing archive",
+      method: "<value>",
+      operationId: "<value>",
+      path: "/tmp",
+      tags: [
+        "<value>",
+      ],
+    },
+  ],
+};
+```
 
 ## Fields
 

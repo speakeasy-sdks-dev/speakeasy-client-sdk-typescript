@@ -1,5 +1,19 @@
 # TargetSDK
 
+## Example Usage
+
+```typescript
+import { TargetSDK } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: TargetSDK = {
+  generateGenLockId: "<value>",
+  generateTarget: "<value>",
+  id: "<id>",
+  lastEventCreatedAt: new Date("2022-07-07T07:36:20.712Z"),
+  lastEventId: "<value>",
+  lastEventInteractionType: "LINT",
+};
+```
 
 ## Fields
 
