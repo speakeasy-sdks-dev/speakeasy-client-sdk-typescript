@@ -1,10 +1,15 @@
 # OrganizationAccountType
 
+## Example Usage
+
+```typescript
+import { OrganizationAccountType } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OrganizationAccountType = "free";
+```
 
 ## Values
 
-| Name         | Value        |
-| ------------ | ------------ |
-| `Free`       | free         |
-| `ScaleUp`    | scale-up     |
-| `Enterprise` | enterprise   |
+```typescript
+"free" | "scale-up" | "enterprise"
+```

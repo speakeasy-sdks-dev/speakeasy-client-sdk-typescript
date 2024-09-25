@@ -25,7 +25,11 @@ Get blob for a particular digest
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getBlob({
@@ -36,7 +40,44 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetBlob } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetBlob.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetBlob(speakeasy, {
+    organizationSlug: "<value>",
+    workspaceSlug: "<value>",
+    namespaceName: "<value>",
+    digest: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -51,15 +92,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetBlobResponse](../../sdk/models/operations/getblobresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getManifest
 
@@ -70,7 +112,11 @@ Get manifest for a particular reference
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getManifest({
@@ -81,7 +127,44 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetManifest } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetManifest.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetManifest(speakeasy, {
+    organizationSlug: "<value>",
+    workspaceSlug: "<value>",
+    namespaceName: "<value>",
+    revisionReference: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -96,15 +179,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetManifestResponse](../../sdk/models/operations/getmanifestresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getNamespaces
 
@@ -115,13 +199,49 @@ Each namespace contains many revisions.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getNamespaces();
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetNamespaces } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetNamespaces.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetNamespaces(speakeasy);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -135,15 +255,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetNamespacesResponse](../../sdk/models/operations/getnamespacesresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getOASSummary
 
@@ -152,7 +273,11 @@ run();
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getOASSummary({
@@ -161,7 +286,42 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetOASSummary } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetOASSummary.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetOASSummary(speakeasy, {
+    namespaceName: "<value>",
+    revisionReference: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -176,15 +336,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetOASSummaryResponse](../../sdk/models/operations/getoassummaryresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getRevisions
 
@@ -193,7 +354,11 @@ run();
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getRevisions({
@@ -201,7 +366,41 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetRevisions } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetRevisions.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetRevisions(speakeasy, {
+    namespaceName: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -216,15 +415,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetRevisionsResponse](../../sdk/models/operations/getrevisionsresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getTags
 
@@ -233,7 +433,11 @@ run();
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.getTags({
@@ -241,7 +445,41 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsGetTags } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsGetTags.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsGetTags(speakeasy, {
+    namespaceName: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -256,15 +494,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetTagsResponse](../../sdk/models/operations/gettagsresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## postTags
 
@@ -275,7 +514,11 @@ Add tags to an existing revision
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.postTags({
@@ -283,7 +526,41 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsPostTags } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsPostTags.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsPostTags(speakeasy, {
+    namespaceName: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -298,15 +575,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[shared.ErrorT](../../sdk/models/shared/errort.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## preflight
 
@@ -317,13 +595,49 @@ Get access token for communicating with OCI distribution endpoints
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.artifacts.preflight();
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { artifactsPreflight } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/artifactsPreflight.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await artifactsPreflight(speakeasy);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -338,10 +652,10 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.PreflightResponse](../../sdk/models/operations/preflightresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |

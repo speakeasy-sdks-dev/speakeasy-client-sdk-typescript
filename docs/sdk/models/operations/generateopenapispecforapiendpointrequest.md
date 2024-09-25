@@ -1,5 +1,16 @@
 # GenerateOpenApiSpecForApiEndpointRequest
 
+## Example Usage
+
+```typescript
+import { GenerateOpenApiSpecForApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GenerateOpenApiSpecForApiEndpointRequest = {
+  apiID: "<value>",
+  versionID: "<value>",
+  apiEndpointID: "<value>",
+};
+```
 
 ## Fields
 

@@ -1,5 +1,15 @@
 # SearchWorkspaceEventsResponse
 
+## Example Usage
+
+```typescript
+import { SearchWorkspaceEventsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: SearchWorkspaceEventsResponse = {
+  message: "<value>",
+  statusCode: 101,
+};
+```
 
 ## Supported Types
 

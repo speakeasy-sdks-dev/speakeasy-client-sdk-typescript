@@ -1,5 +1,12 @@
 # GetActionResponse
 
+## Example Usage
+
+```typescript
+import { GetActionResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetActionResponse = {};
+```
 
 ## Supported Types
 

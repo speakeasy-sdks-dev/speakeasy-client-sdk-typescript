@@ -1,5 +1,15 @@
 # GetEmbedAccessTokenResponse
 
+## Example Usage
+
+```typescript
+import { GetEmbedAccessTokenResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetEmbedAccessTokenResponse = {
+  message: "<value>",
+  statusCode: 100,
+};
+```
 
 ## Supported Types
 

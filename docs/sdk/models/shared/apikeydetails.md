@@ -1,5 +1,21 @@
 # ApiKeyDetails
 
+## Example Usage
+
+```typescript
+import { ApiKeyDetails } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: ApiKeyDetails = {
+  accountType: "scale-up",
+  enabledFeatures: [
+    "<value>",
+  ],
+  orgSlug: "<value>",
+  telemetryDisabled: false,
+  workspaceId: "<value>",
+  workspaceSlug: "<value>",
+};
+```
 
 ## Fields
 

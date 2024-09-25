@@ -1,5 +1,12 @@
 # SuggestOperationIDsOpts
 
+## Example Usage
+
+```typescript
+import { SuggestOperationIDsOpts } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: SuggestOperationIDsOpts = {};
+```
 
 ## Fields
 

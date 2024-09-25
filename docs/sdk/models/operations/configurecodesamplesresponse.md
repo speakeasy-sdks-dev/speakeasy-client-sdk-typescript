@@ -1,5 +1,15 @@
 # ConfigureCodeSamplesResponse
 
+## Example Usage
+
+```typescript
+import { ConfigureCodeSamplesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: ConfigureCodeSamplesResponse = {
+  message: "<value>",
+  statusCode: 409,
+};
+```
 
 ## Supported Types
 

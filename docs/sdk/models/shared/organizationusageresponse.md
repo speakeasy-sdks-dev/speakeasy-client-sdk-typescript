@@ -2,6 +2,37 @@
 
 A billing summary of organization usage
 
+## Example Usage
+
+```typescript
+import { OrganizationUsageResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OrganizationUsageResponse = {
+  allowedLanguages: [
+    "<value>",
+  ],
+  totalAllowedLanguages: 296140,
+  usage: [
+    {
+      accessible: false,
+      accessibleFeatures: [
+        "<value>",
+      ],
+      genLockIds: [
+        "<value>",
+      ],
+      language: "<value>",
+      numberOfOperations: 118727,
+      usedFeatures: [
+        "<value>",
+      ],
+      workspaces: [
+        "<value>",
+      ],
+    },
+  ],
+};
+```
 
 ## Fields
 

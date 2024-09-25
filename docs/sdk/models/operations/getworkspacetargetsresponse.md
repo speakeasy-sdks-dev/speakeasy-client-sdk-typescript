@@ -1,5 +1,15 @@
 # GetWorkspaceTargetsResponse
 
+## Example Usage
+
+```typescript
+import { GetWorkspaceTargetsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetWorkspaceTargetsResponse = {
+  message: "<value>",
+  statusCode: 103,
+};
+```
 
 ## Supported Types
 

@@ -1,5 +1,12 @@
 # GeneratePostmanCollectionResponse
 
+## Example Usage
+
+```typescript
+import { GeneratePostmanCollectionResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+// No examples available for this model
+```
 
 ## Supported Types
 

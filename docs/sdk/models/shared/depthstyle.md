@@ -1,11 +1,15 @@
 # DepthStyle
 
+## Example Usage
+
+```typescript
+import { DepthStyle } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: DepthStyle = "original";
+```
 
 ## Values
 
-| Name       | Value      |
-| ---------- | ---------- |
-| `Original` | original   |
-| `Flat`     | flat       |
-| `Nested`   | nested     |
-| `Deep`     | deep       |
+```typescript
+"original" | "flat" | "nested" | "deep"
+```

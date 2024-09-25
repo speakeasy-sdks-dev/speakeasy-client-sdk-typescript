@@ -1,5 +1,22 @@
 # CliEvent
 
+## Example Usage
+
+```typescript
+import { CliEvent } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: CliEvent = {
+  createdAt: new Date("2024-02-25T02:16:14.798Z"),
+  executionId: "<value>",
+  id: "<id>",
+  interactionType: "OPENAPI_DIFF",
+  localStartedAt: new Date("2022-07-20T18:39:56.110Z"),
+  speakeasyApiKeyName: "<value>",
+  speakeasyVersion: "<value>",
+  success: false,
+  workspaceId: "<value>",
+};
+```
 
 ## Fields
 

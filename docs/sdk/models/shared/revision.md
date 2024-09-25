@@ -1,5 +1,22 @@
 # Revision
 
+## Example Usage
+
+```typescript
+import { Revision } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Revision = {
+  createdAt: new Date("2024-01-01T18:37:54.059Z"),
+  digest:
+    "sha256:6d1ef012b5674ad8a127ecfa9b5e6f5178d171b90ee462846974177fd9bdd39f",
+  id: "<id>",
+  namespaceName: "<value>",
+  tags: [
+    "<value>",
+  ],
+  updatedAt: new Date("2024-01-06T00:27:30.681Z"),
+};
+```
 
 ## Fields
 

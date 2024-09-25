@@ -1,5 +1,12 @@
 # PostWorkspaceEventsGlobals
 
+## Example Usage
+
+```typescript
+import { PostWorkspaceEventsGlobals } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: PostWorkspaceEventsGlobals = {};
+```
 
 ## Fields
 

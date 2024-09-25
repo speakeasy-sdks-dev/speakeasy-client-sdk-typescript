@@ -2,6 +2,17 @@
 
 A request to trigger an action on a GitHub target
 
+## Example Usage
+
+```typescript
+import { GithubTriggerActionRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: GithubTriggerActionRequest = {
+  genLockId: "<value>",
+  org: "<value>",
+  repoName: "<value>",
+};
+```
 
 ## Fields
 

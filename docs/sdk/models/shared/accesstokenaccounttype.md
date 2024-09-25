@@ -1,10 +1,15 @@
 # AccessTokenAccountType
 
+## Example Usage
+
+```typescript
+import { AccessTokenAccountType } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: AccessTokenAccountType = "free";
+```
 
 ## Values
 
-| Name         | Value        |
-| ------------ | ------------ |
-| `Free`       | free         |
-| `ScaleUp`    | scale-up     |
-| `Enterprise` | enterprise   |
+```typescript
+"free" | "scale-up" | "enterprise"
+```

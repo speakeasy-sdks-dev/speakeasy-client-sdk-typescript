@@ -1,5 +1,20 @@
 # OASOperation
 
+## Example Usage
+
+```typescript
+import { OASOperation } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: OASOperation = {
+  description: "Polarised mission-critical middleware",
+  method: "<value>",
+  operationId: "<value>",
+  path: "/var/mail",
+  tags: [
+    "<value>",
+  ],
+};
+```
 
 ## Fields
 

@@ -1,5 +1,16 @@
 # GetAccessTokenResponse
 
+## Example Usage
+
+```typescript
+import { GetAccessTokenResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetAccessTokenResponse = {
+  accessToken: "<value>",
+  claims: {},
+  user: {},
+};
+```
 
 ## Supported Types
 

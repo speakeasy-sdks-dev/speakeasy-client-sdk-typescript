@@ -2,6 +2,24 @@
 
 An ApiEndpoint is a description of an Endpoint for an API.
 
+## Example Usage
+
+```typescript
+import { ApiEndpoint } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: ApiEndpoint = {
+  apiEndpointId: "<value>",
+  apiId: "<value>",
+  createdAt: new Date("2024-09-04T09:11:49.246Z"),
+  description: "Versatile exuding project",
+  displayName: "Junior.Walsh8",
+  method: "<value>",
+  path: "/usr/obj",
+  updatedAt: new Date("2024-05-02T20:38:06.637Z"),
+  versionId: "<value>",
+  workspaceId: "<value>",
+};
+```
 
 ## Fields
 

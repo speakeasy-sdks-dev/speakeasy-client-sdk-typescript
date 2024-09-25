@@ -1,5 +1,23 @@
 # User
 
+## Example Usage
+
+```typescript
+import { User } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: User = {
+  admin: false,
+  confirmed: false,
+  createdAt: new Date("2022-05-22T07:16:38.400Z"),
+  displayName: "Emerald.Marks98",
+  email: "Caroline.Fritsch24@gmail.com",
+  emailVerified: false,
+  id: "<id>",
+  lastLoginAt: new Date("2022-05-01T23:18:27.767Z"),
+  updatedAt: new Date("2023-12-21T08:05:36.677Z"),
+  whitelisted: false,
+};
+```
 
 ## Fields
 

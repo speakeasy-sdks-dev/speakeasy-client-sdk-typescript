@@ -2,6 +2,22 @@
 
 A speakeasy workspace
 
+## Example Usage
+
+```typescript
+import { Workspace } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Workspace = {
+  createdAt: new Date("2024-10-15T12:12:25.852Z"),
+  id: "<id>",
+  name: "<value>",
+  organizationId: "<value>",
+  slug: "<value>",
+  telemetryDisabled: false,
+  updatedAt: new Date("2022-12-16T03:38:15.811Z"),
+  verified: false,
+};
+```
 
 ## Fields
 

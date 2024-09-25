@@ -1,5 +1,15 @@
 # GenerateOpenApiSpecForApiEndpointResponse
 
+## Example Usage
+
+```typescript
+import { GenerateOpenApiSpecForApiEndpointResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GenerateOpenApiSpecForApiEndpointResponse = {
+  currentSchema: "<value>",
+  newSchema: "<value>",
+};
+```
 
 ## Supported Types
 

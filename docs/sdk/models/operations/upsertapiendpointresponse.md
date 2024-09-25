@@ -1,5 +1,15 @@
 # UpsertApiEndpointResponse
 
+## Example Usage
+
+```typescript
+import { UpsertApiEndpointResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: UpsertApiEndpointResponse = {
+  message: "<value>",
+  statusCode: 103,
+};
+```
 
 ## Supported Types
 

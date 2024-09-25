@@ -1,6 +1,8 @@
 # Organizations
 (*organizations*)
 
+## Overview
+
 ### Available Operations
 
 * [createFreeTrial](#createfreetrial) - Create a free trial for an organization
@@ -17,13 +19,49 @@ Creates a free trial for an organization
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.organizations.createFreeTrial();
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { organizationsCreateFreeTrial } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/organizationsCreateFreeTrial.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await organizationsCreateFreeTrial(speakeasy);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -37,15 +75,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[shared.ErrorT](../../sdk/models/shared/errort.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getOrganization
 
@@ -56,7 +95,11 @@ Get information about a particular organization.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.organizations.getOrganization({
@@ -64,7 +107,41 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { organizationsGetOrganization } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/organizationsGetOrganization.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await organizationsGetOrganization(speakeasy, {
+    organizationID: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -79,15 +156,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetOrganizationResponse](../../sdk/models/operations/getorganizationresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getOrganizationUsage
 
@@ -98,13 +176,49 @@ Returns a billing usage summary by target languages for a particular organizatio
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.organizations.getOrganizationUsage();
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { organizationsGetOrganizationUsage } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/organizationsGetOrganizationUsage.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await organizationsGetOrganizationUsage(speakeasy);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -118,15 +232,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetOrganizationUsageResponse](../../sdk/models/operations/getorganizationusageresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getOrganizations
 
@@ -137,13 +252,49 @@ Returns a list of organizations a user has access too
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.organizations.getOrganizations();
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { organizationsGetOrganizations } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/organizationsGetOrganizations.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await organizationsGetOrganizations(speakeasy);
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -157,10 +308,10 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetOrganizationsResponse](../../sdk/models/operations/getorganizationsresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |

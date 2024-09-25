@@ -2,6 +2,18 @@
 
 A speakeasy organization
 
+## Example Usage
+
+```typescript
+import { Organization } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: Organization = {
+  accountType: "free",
+  id: "<id>",
+  name: "<value>",
+  telemetryDisabled: false,
+};
+```
 
 ## Fields
 

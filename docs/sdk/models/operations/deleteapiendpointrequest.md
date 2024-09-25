@@ -1,5 +1,16 @@
 # DeleteApiEndpointRequest
 
+## Example Usage
+
+```typescript
+import { DeleteApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: DeleteApiEndpointRequest = {
+  apiID: "<value>",
+  versionID: "<value>",
+  apiEndpointID: "<value>",
+};
+```
 
 ## Fields
 

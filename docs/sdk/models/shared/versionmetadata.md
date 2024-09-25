@@ -2,6 +2,20 @@
 
 A set of keys and associated values, attached to a particular version of an Api.
 
+## Example Usage
+
+```typescript
+import { VersionMetadata } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: VersionMetadata = {
+  apiId: "<value>",
+  createdAt: new Date("2024-08-11T12:47:58.371Z"),
+  metaKey: "<value>",
+  metaValue: "<value>",
+  versionId: "<value>",
+  workspaceId: "<value>",
+};
+```
 
 ## Fields
 

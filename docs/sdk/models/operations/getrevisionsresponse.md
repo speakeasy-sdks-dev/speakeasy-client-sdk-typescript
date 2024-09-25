@@ -1,5 +1,15 @@
 # GetRevisionsResponse
 
+## Example Usage
+
+```typescript
+import { GetRevisionsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+
+let value: GetRevisionsResponse = {
+  message: "<value>",
+  statusCode: 202,
+};
+```
 
 ## Supported Types
 

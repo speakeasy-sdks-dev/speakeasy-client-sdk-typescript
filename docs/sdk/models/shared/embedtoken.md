@@ -2,6 +2,21 @@
 
 A representation of an embed token granted for working with Speakeasy components.
 
+## Example Usage
+
+```typescript
+import { EmbedToken } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
+
+let value: EmbedToken = {
+  createdAt: new Date("2023-09-13T23:53:04.745Z"),
+  createdBy: "<value>",
+  description: "Expanded incremental approach",
+  expiresAt: new Date("2023-09-24T05:41:47.829Z"),
+  filters: "<value>",
+  id: "<id>",
+  workspaceId: "<value>",
+};
+```
 
 ## Fields
 

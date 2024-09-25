@@ -23,7 +23,11 @@ Delete a particular version of an Api. The will also delete all associated ApiEn
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.deleteApi({
@@ -32,7 +36,42 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisDeleteApi } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisDeleteApi.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisDeleteApi(speakeasy, {
+    apiID: "<value>",
+    versionID: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -47,15 +86,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[shared.ErrorT](../../sdk/models/shared/errort.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## generateOpenApiSpec
 
@@ -67,7 +107,11 @@ Returns the original document and the newly generated document allowing a diff t
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.generateOpenApiSpec({
@@ -76,7 +120,42 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisGenerateOpenApiSpec } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisGenerateOpenApiSpec.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisGenerateOpenApiSpec(speakeasy, {
+    apiID: "<value>",
+    versionID: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -91,15 +170,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GenerateOpenApiSpecResponse](../../sdk/models/operations/generateopenapispecresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## generatePostmanCollection
 
@@ -110,7 +190,11 @@ Generates a postman collection containing all endpoints for a particular API. In
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.generatePostmanCollection({
@@ -119,7 +203,42 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisGeneratePostmanCollection } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisGeneratePostmanCollection.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisGeneratePostmanCollection(speakeasy, {
+    apiID: "<value>",
+    versionID: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -134,15 +253,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GeneratePostmanCollectionResponse](../../sdk/models/operations/generatepostmancollectionresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getAllApiVersions
 
@@ -154,7 +274,11 @@ Supports filtering the versions based on metadata attributes.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.getAllApiVersions({
@@ -162,7 +286,41 @@ async function run() {
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisGetAllApiVersions } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisGetAllApiVersions.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisGetAllApiVersions(speakeasy, {
+    apiID: "<value>",
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -177,15 +335,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetAllApiVersionsResponse](../../sdk/models/operations/getallapiversionsresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## getApis
 
@@ -197,13 +356,49 @@ Supports filtering the APIs based on metadata attributes.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.getApis({});
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisGetApis } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisGetApis.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisGetApis(speakeasy, {});
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -218,15 +413,16 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.GetApisResponse](../../sdk/models/operations/getapisresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
 | --------------- | --------------- | --------------- |
 | errors.SDKError | 4xx-5xx         | */*             |
+
 
 ## upsertApi
 
@@ -238,20 +434,63 @@ If the Api exists, it will be updated.
 ```typescript
 import { Speakeasy } from "@speakeasy-api/speakeasy-client-sdk-typescript";
 
-const speakeasy = new Speakeasy();
+const speakeasy = new Speakeasy({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
 
 async function run() {
   const result = await speakeasy.apis.upsertApi({
     apiID: "<value>",
     api: {
       apiId: "<value>",
-      description: "Synchronised 5th generation knowledge user",
+      description: "Synchronised leading edge utilisation",
       versionId: "<value>",
     },
   });
 
   // Handle the result
-  console.log(result)
+  console.log(result);
+}
+
+run();
+```
+
+### Standalone function
+
+The standalone function version of this method:
+
+```typescript
+import { SpeakeasyCore } from "@speakeasy-api/speakeasy-client-sdk-typescript/core.js";
+import { apisUpsertApi } from "@speakeasy-api/speakeasy-client-sdk-typescript/funcs/apisUpsertApi.js";
+
+// Use `SpeakeasyCore` for best tree-shaking performance.
+// You can create one instance of it to use across an application.
+const speakeasy = new SpeakeasyCore({
+  security: {
+    apiKey: "<YOUR_API_KEY_HERE>",
+  },
+});
+
+async function run() {
+  const res = await apisUpsertApi(speakeasy, {
+    apiID: "<value>",
+    api: {
+      apiId: "<value>",
+      description: "Synchronised leading edge utilisation",
+      versionId: "<value>",
+    },
+  });
+
+  if (!res.ok) {
+    throw res.error;
+  }
+
+  const { value: result } = res;
+
+  // Handle the result
+  console.log(result);
 }
 
 run();
@@ -266,10 +505,10 @@ run();
 | `options.fetchOptions`                                                                                                                                                         | [RequestInit](https://developer.mozilla.org/en-US/docs/Web/API/Request/Request#options)                                                                                        | :heavy_minus_sign:                                                                                                                                                             | Options that are passed to the underlying HTTP request. This can be used to inject extra headers for examples. All `Request` options, except `method` and `body`, are allowed. |
 | `options.retries`                                                                                                                                                              | [RetryConfig](../../lib/utils/retryconfig.md)                                                                                                                                  | :heavy_minus_sign:                                                                                                                                                             | Enables retrying HTTP requests under certain failure conditions.                                                                                                               |
 
-
 ### Response
 
 **Promise\<[operations.UpsertApiResponse](../../sdk/models/operations/upsertapiresponse.md)\>**
+
 ### Errors
 
 | Error Object    | Status Code     | Content Type    |
