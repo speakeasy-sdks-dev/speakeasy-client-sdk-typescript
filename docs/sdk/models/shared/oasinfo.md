@@ -6,7 +6,7 @@
 import { OASInfo } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: OASInfo = {
-  description: "Public-key executive help-desk",
+  description: "whether aha furthermore geez um scenario hippodrome vain tag",
   license: {},
   summary: "<value>",
   title: "<value>",

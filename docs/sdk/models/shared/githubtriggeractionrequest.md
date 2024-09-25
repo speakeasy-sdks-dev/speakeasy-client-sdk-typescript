@@ -8,7 +8,7 @@ A request to trigger an action on a GitHub target
 import { GithubTriggerActionRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: GithubTriggerActionRequest = {
-  genLockId: "<value>",
+  genLockId: "<id>",
   org: "<value>",
   repoName: "<value>",
 };

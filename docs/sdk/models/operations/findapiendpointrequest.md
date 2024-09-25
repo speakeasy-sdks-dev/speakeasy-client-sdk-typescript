@@ -6,9 +6,9 @@
 import { FindApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: FindApiEndpointRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
-  displayName: "Raquel88",
+  apiID: "<id>",
+  versionID: "<id>",
+  displayName: "Eldred_Kunde84",
 };
 ```
 

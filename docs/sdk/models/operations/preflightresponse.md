@@ -1,27 +1,20 @@
 # PreflightResponse
 
-## Example Usage
-
-```typescript
-import { PreflightResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: PreflightResponse = {
-  message: "<value>",
-  statusCode: 202,
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 306,
+};
 ```
 
 ### `shared.PreflightToken`
 
 ```typescript
-const value: shared.PreflightToken = /* values here */
+const value: shared.PreflightToken = {};
 ```
 

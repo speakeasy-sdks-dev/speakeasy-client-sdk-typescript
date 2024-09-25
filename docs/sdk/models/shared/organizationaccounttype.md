@@ -5,7 +5,7 @@
 ```typescript
 import { OrganizationAccountType } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
-let value: OrganizationAccountType = "free";
+let value: OrganizationAccountType = "enterprise";
 ```
 
 ## Values

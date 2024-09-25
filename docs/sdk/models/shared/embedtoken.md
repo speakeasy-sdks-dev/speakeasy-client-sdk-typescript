@@ -8,13 +8,14 @@ A representation of an embed token granted for working with Speakeasy components
 import { EmbedToken } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: EmbedToken = {
-  createdAt: new Date("2023-09-13T23:53:04.745Z"),
+  createdAt: new Date("2023-01-01T12:34:49.368Z"),
   createdBy: "<value>",
-  description: "Expanded incremental approach",
-  expiresAt: new Date("2023-09-24T05:41:47.829Z"),
+  description:
+    "ouch substantiate into ew a sidetrack popularity clamor svelte ah",
+  expiresAt: new Date("2022-06-25T20:56:27.257Z"),
   filters: "<value>",
   id: "<id>",
-  workspaceId: "<value>",
+  workspaceId: "<id>",
 };
 ```
 

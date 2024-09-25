@@ -8,7 +8,7 @@ A speakeasy organization
 import { Organization } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: Organization = {
-  accountType: "free",
+  accountType: "scale-up",
   id: "<id>",
   name: "<value>",
   telemetryDisabled: false,

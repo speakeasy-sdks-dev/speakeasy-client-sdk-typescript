@@ -6,7 +6,7 @@
 import { GetOrganizationRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetOrganizationRequest = {
-  organizationID: "<value>",
+  organizationID: "<id>",
 };
 ```
 

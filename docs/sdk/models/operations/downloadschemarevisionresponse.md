@@ -1,30 +1,26 @@
 # DownloadSchemaRevisionResponse
 
-## Example Usage
-
-```typescript
-import { DownloadSchemaRevisionResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-// No examples available for this model
-```
 
 ## Supported Types
 
 ### `ReadableStream<Uint8Array>`
 
 ```typescript
-const value: ReadableStream<Uint8Array> = /* values here */
+const value: ReadableStream<Uint8Array> = await openAsBlob("example.file");
 ```
 
 ### `ReadableStream<Uint8Array>`
 
 ```typescript
-const value: ReadableStream<Uint8Array> = /* values here */
+const value: ReadableStream<Uint8Array> = await openAsBlob("example.file");
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 503,
+};
 ```
 

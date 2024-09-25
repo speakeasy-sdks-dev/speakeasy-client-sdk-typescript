@@ -1,40 +1,36 @@
 # QueryEventLogResponse
 
-## Example Usage
-
-```typescript
-import { QueryEventLogResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: QueryEventLogResponse = [
-  {
-    apiEndpointId: "<value>",
-    apiId: "<value>",
-    createdAt: new Date("2023-08-12T02:10:46.448Z"),
-    customerId: "<value>",
-    latency: 896672,
-    method: "<value>",
-    path: "/var/yp",
-    requestFinishTime: new Date("2022-08-26T17:15:29.799Z"),
-    requestId: "<value>",
-    requestStartTime: new Date("2023-12-28T17:36:32.596Z"),
-    status: 263322,
-    versionId: "<value>",
-    workspaceId: "<value>",
-  },
-];
-```
 
 ## Supported Types
 
 ### `shared.BoundedRequest[]`
 
 ```typescript
-const value: shared.BoundedRequest[] = /* values here */
+const value: shared.BoundedRequest[] = [
+  {
+    apiEndpointId: "<id>",
+    apiId: "<id>",
+    createdAt: new Date("2024-03-02T17:47:11.428Z"),
+    customerId: "<id>",
+    latency: 317632,
+    method: "<value>",
+    path: "/net",
+    requestFinishTime: new Date("2022-01-22T13:58:08.292Z"),
+    requestId: "<id>",
+    requestStartTime: new Date("2022-02-14T19:10:20.351Z"),
+    status: 257821,
+    versionId: "<id>",
+    workspaceId: "<id>",
+  },
+];
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 418,
+};
 ```
 

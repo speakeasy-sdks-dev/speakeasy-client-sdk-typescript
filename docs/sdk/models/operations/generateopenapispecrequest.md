@@ -6,8 +6,8 @@
 import { GenerateOpenApiSpecRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GenerateOpenApiSpecRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
 };
 ```
 

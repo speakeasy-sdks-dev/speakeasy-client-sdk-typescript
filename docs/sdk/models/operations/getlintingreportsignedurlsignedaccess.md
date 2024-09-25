@@ -8,7 +8,7 @@ OK
 import { GetLintingReportSignedUrlSignedAccess } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetLintingReportSignedUrlSignedAccess = {
-  url: "https://insistent-gerbil.info/",
+  url: "https://querulous-bump.name/",
 };
 ```
 

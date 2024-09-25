@@ -6,7 +6,7 @@
 import { CreateRequestBody } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: CreateRequestBody = {
-  url: "https://complete-provision.info",
+  url: "https://overcooked-swine.org/",
 };
 ```
 

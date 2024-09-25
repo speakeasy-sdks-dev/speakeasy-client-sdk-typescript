@@ -8,19 +8,19 @@ A BoundedRequest is a request that has been logged by the Speakeasy without the 
 import { BoundedRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: BoundedRequest = {
-  apiEndpointId: "<value>",
-  apiId: "<value>",
-  createdAt: new Date("2024-07-07T09:18:10.249Z"),
-  customerId: "<value>",
-  latency: 96098,
+  apiEndpointId: "<id>",
+  apiId: "<id>",
+  createdAt: new Date("2024-02-06T17:37:20.583Z"),
+  customerId: "<id>",
+  latency: 967966,
   method: "<value>",
-  path: "/var/tmp",
-  requestFinishTime: new Date("2023-05-29T15:24:04.349Z"),
-  requestId: "<value>",
-  requestStartTime: new Date("2024-12-06T12:43:25.190Z"),
-  status: 604846,
-  versionId: "<value>",
-  workspaceId: "<value>",
+  path: "/var/yp",
+  requestFinishTime: new Date("2023-05-11T04:43:03.147Z"),
+  requestId: "<id>",
+  requestStartTime: new Date("2022-03-19T16:09:31.123Z"),
+  status: 292794,
+  versionId: "<id>",
+  workspaceId: "<id>",
 };
 ```
 

@@ -1,27 +1,25 @@
 # ConfigureCodeSamplesResponse
 
-## Example Usage
-
-```typescript
-import { ConfigureCodeSamplesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: ConfigureCodeSamplesResponse = {
-  message: "<value>",
-  statusCode: 409,
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 424,
+};
 ```
 
 ### `shared.GithubConfigureCodeSamplesResponse`
 
 ```typescript
-const value: shared.GithubConfigureCodeSamplesResponse = /* values here */
+const value: shared.GithubConfigureCodeSamplesResponse = {
+  codeSampleOverlayRegistryURL: "https://self-reliant-waterspout.org",
+  source: {
+    location: "<value>",
+  },
+};
 ```
 

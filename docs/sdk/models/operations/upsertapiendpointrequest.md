@@ -6,16 +6,16 @@
 import { UpsertApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: UpsertApiEndpointRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
-  apiEndpointID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
+  apiEndpointID: "<id>",
   apiEndpoint: {
-    apiEndpointId: "<value>",
-    description: "Total scalable orchestration",
-    displayName: "Barbara14",
+    apiEndpointId: "<id>",
+    description: "drag scratch lashes warmly that ocelot ouch marketplace",
+    displayName: "Elena98",
     method: "<value>",
-    path: "/etc/periodic",
-    versionId: "<value>",
+    path: "/rescue",
+    versionId: "<id>",
   },
 };
 ```

@@ -1,27 +1,23 @@
 # GenerateOpenApiSpecResponse
 
-## Example Usage
-
-```typescript
-import { GenerateOpenApiSpecResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GenerateOpenApiSpecResponse = {
-  message: "<value>",
-  statusCode: 407,
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 100,
+};
 ```
 
 ### `shared.GenerateOpenApiSpecDiff`
 
 ```typescript
-const value: shared.GenerateOpenApiSpecDiff = /* values here */
+const value: shared.GenerateOpenApiSpecDiff = {
+  currentSchema: "<value>",
+  newSchema: "<value>",
+};
 ```
 

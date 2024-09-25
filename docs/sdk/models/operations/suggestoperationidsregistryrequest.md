@@ -6,7 +6,7 @@
 import { SuggestOperationIDsRegistryRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: SuggestOperationIDsRegistryRequest = {
-  xSessionId: "<value>",
+  xSessionId: "<id>",
   namespaceName: "<value>",
   revisionReference: "<value>",
 };

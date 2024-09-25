@@ -1,11 +1,21 @@
 # GetSchemaDiffResponse
 
-## Example Usage
+
+## Supported Types
+
+### `shared.ErrorT`
 
 ```typescript
-import { GetSchemaDiffResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 305,
+};
+```
 
-let value: GetSchemaDiffResponse = {
+### `shared.SchemaDiff`
+
+```typescript
+const value: shared.SchemaDiff = {
   additions: [
     "<value>",
   ],
@@ -19,19 +29,5 @@ let value: GetSchemaDiffResponse = {
     },
   },
 };
-```
-
-## Supported Types
-
-### `shared.ErrorT`
-
-```typescript
-const value: shared.ErrorT = /* values here */
-```
-
-### `shared.SchemaDiff`
-
-```typescript
-const value: shared.SchemaDiff = /* values here */
 ```
 

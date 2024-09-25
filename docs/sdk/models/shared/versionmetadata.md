@@ -8,12 +8,12 @@ A set of keys and associated values, attached to a particular version of an Api.
 import { VersionMetadata } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: VersionMetadata = {
-  apiId: "<value>",
-  createdAt: new Date("2024-08-11T12:47:58.371Z"),
+  apiId: "<id>",
+  createdAt: new Date("2022-07-24T01:37:14.976Z"),
   metaKey: "<value>",
   metaValue: "<value>",
-  versionId: "<value>",
-  workspaceId: "<value>",
+  versionId: "<id>",
+  workspaceId: "<id>",
 };
 ```
 

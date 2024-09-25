@@ -6,9 +6,9 @@
 import { GenerateOpenApiSpecForApiEndpointRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GenerateOpenApiSpecForApiEndpointRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
-  apiEndpointID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
+  apiEndpointID: "<id>",
 };
 ```
 

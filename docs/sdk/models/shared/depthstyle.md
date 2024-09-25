@@ -5,7 +5,7 @@
 ```typescript
 import { DepthStyle } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
-let value: DepthStyle = "original";
+let value: DepthStyle = "nested";
 ```
 
 ## Values

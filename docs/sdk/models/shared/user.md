@@ -8,13 +8,13 @@ import { User } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/
 let value: User = {
   admin: false,
   confirmed: false,
-  createdAt: new Date("2022-05-22T07:16:38.400Z"),
-  displayName: "Emerald.Marks98",
-  email: "Caroline.Fritsch24@gmail.com",
+  createdAt: new Date("2022-09-13T19:53:11.039Z"),
+  displayName: "Mary_Renner",
+  email: "Nelle30@yahoo.com",
   emailVerified: false,
   id: "<id>",
-  lastLoginAt: new Date("2022-05-01T23:18:27.767Z"),
-  updatedAt: new Date("2023-12-21T08:05:36.677Z"),
+  lastLoginAt: new Date("2022-09-18T13:33:39.569Z"),
+  updatedAt: new Date("2023-07-05T14:51:08.243Z"),
   whitelisted: false,
 };
 ```

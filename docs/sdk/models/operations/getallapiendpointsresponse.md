@@ -1,37 +1,34 @@
 # GetAllApiEndpointsResponse
 
-## Example Usage
-
-```typescript
-import { GetAllApiEndpointsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetAllApiEndpointsResponse = [
-  {
-    apiEndpointId: "<value>",
-    apiId: "<value>",
-    createdAt: new Date("2023-10-27T14:34:01.576Z"),
-    description: "Advanced disintermediate monitoring",
-    displayName: "Effie.Keebler",
-    method: "<value>",
-    path: "/srv",
-    updatedAt: new Date("2023-09-22T11:03:04.845Z"),
-    versionId: "<value>",
-    workspaceId: "<value>",
-  },
-];
-```
 
 ## Supported Types
 
 ### `shared.ApiEndpoint[]`
 
 ```typescript
-const value: shared.ApiEndpoint[] = /* values here */
+const value: shared.ApiEndpoint[] = [
+  {
+    apiEndpointId: "<id>",
+    apiId: "<id>",
+    createdAt: new Date("2024-10-24T01:55:36.017Z"),
+    description:
+      "store lively perfectly starch state belabor zowie incidentally nifty and",
+    displayName: "Estefania_Krajcik29",
+    method: "<value>",
+    path: "/net",
+    updatedAt: new Date("2024-06-11T00:18:11.711Z"),
+    versionId: "<id>",
+    workspaceId: "<id>",
+  },
+];
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 100,
+};
 ```
 

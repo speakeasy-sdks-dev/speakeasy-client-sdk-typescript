@@ -1,13 +1,23 @@
 # GetOASSummaryResponse
 
-## Example Usage
+
+## Supported Types
+
+### `shared.ErrorT`
 
 ```typescript
-import { GetOASSummaryResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 451,
+};
+```
 
-let value: GetOASSummaryResponse = {
+### `shared.OASSummary`
+
+```typescript
+const value: shared.OASSummary = {
   info: {
-    description: "Organized contextually-based task-force",
+    description: "zowie bah over ouch beneath lumpy per firm table restfully",
     license: {},
     summary: "<value>",
     title: "<value>",
@@ -15,29 +25,16 @@ let value: GetOASSummaryResponse = {
   },
   operations: [
     {
-      description: "Polarised interactive matrices",
+      description:
+        "needily wetly govern cleverly upon around glaring untrue suspension",
       method: "<value>",
-      operationId: "<value>",
-      path: "/usr/include",
+      operationId: "<id>",
+      path: "/dev",
       tags: [
         "<value>",
       ],
     },
   ],
 };
-```
-
-## Supported Types
-
-### `shared.ErrorT`
-
-```typescript
-const value: shared.ErrorT = /* values here */
-```
-
-### `shared.OASSummary`
-
-```typescript
-const value: shared.OASSummary = /* values here */
 ```
 

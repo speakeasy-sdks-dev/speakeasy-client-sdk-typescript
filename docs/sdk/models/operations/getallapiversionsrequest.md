@@ -6,7 +6,7 @@
 import { GetAllApiVersionsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetAllApiVersionsRequest = {
-  apiID: "<value>",
+  apiID: "<id>",
 };
 ```
 

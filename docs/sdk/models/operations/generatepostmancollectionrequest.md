@@ -6,8 +6,8 @@
 import { GeneratePostmanCollectionRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GeneratePostmanCollectionRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
 };
 ```
 

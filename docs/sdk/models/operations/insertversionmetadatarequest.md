@@ -6,8 +6,8 @@
 import { InsertVersionMetadataRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: InsertVersionMetadataRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
   versionMetadata: {
     metaKey: "<value>",
     metaValue: "<value>",

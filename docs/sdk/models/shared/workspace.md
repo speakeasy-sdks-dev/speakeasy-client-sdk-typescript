@@ -8,13 +8,13 @@ A speakeasy workspace
 import { Workspace } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: Workspace = {
-  createdAt: new Date("2024-10-15T12:12:25.852Z"),
+  createdAt: new Date("2024-08-29T09:21:28.573Z"),
   id: "<id>",
   name: "<value>",
-  organizationId: "<value>",
+  organizationId: "<id>",
   slug: "<value>",
   telemetryDisabled: false,
-  updatedAt: new Date("2022-12-16T03:38:15.811Z"),
+  updatedAt: new Date("2023-05-05T05:57:31.337Z"),
   verified: false,
 };
 ```

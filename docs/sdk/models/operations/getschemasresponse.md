@@ -1,33 +1,30 @@
 # GetSchemasResponse
 
-## Example Usage
-
-```typescript
-import { GetSchemasResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetSchemasResponse = [
-  {
-    apiId: "<value>",
-    createdAt: new Date("2022-03-01T13:18:23.203Z"),
-    description: "Distributed 24/7 project",
-    revisionId: "<value>",
-    versionId: "<value>",
-    workspaceId: "<value>",
-  },
-];
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 507,
+};
 ```
 
 ### `shared.Schema[]`
 
 ```typescript
-const value: shared.Schema[] = /* values here */
+const value: shared.Schema[] = [
+  {
+    apiId: "<id>",
+    createdAt: new Date("2024-08-25T20:28:23.232Z"),
+    description:
+      "tomorrow optimistically everlasting specific fray rebuke well-to-do antique reel foot",
+    revisionId: "<id>",
+    versionId: "<id>",
+    workspaceId: "<id>",
+  },
+];
 ```
 

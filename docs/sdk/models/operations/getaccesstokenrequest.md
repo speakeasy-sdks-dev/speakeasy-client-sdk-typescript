@@ -6,7 +6,7 @@
 import { GetAccessTokenRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetAccessTokenRequest = {
-  workspaceId: "<value>",
+  workspaceId: "<id>",
 };
 ```
 

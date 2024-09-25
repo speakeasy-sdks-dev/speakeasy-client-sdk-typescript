@@ -1,24 +1,20 @@
 # GetActionResponse
 
-## Example Usage
-
-```typescript
-import { GetActionResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetActionResponse = {};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 103,
+};
 ```
 
 ### `shared.GithubGetActionResponse`
 
 ```typescript
-const value: shared.GithubGetActionResponse = /* values here */
+const value: shared.GithubGetActionResponse = {};
 ```
 

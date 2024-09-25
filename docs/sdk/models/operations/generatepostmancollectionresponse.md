@@ -1,24 +1,20 @@
 # GeneratePostmanCollectionResponse
 
-## Example Usage
-
-```typescript
-import { GeneratePostmanCollectionResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-// No examples available for this model
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 508,
+};
 ```
 
 ### `ReadableStream<Uint8Array>`
 
 ```typescript
-const value: ReadableStream<Uint8Array> = /* values here */
+const value: ReadableStream<Uint8Array> = await openAsBlob("example.file");
 ```
 

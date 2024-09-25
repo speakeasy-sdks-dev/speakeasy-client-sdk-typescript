@@ -1,15 +1,25 @@
 # GetOrganizationUsageResponse
 
-## Example Usage
+
+## Supported Types
+
+### `shared.ErrorT`
 
 ```typescript
-import { GetOrganizationUsageResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 102,
+};
+```
 
-let value: GetOrganizationUsageResponse = {
+### `shared.OrganizationUsageResponse`
+
+```typescript
+const value: shared.OrganizationUsageResponse = {
   allowedLanguages: [
     "<value>",
   ],
-  totalAllowedLanguages: 687488,
+  totalAllowedLanguages: 452653,
   usage: [
     {
       accessible: false,
@@ -20,7 +30,7 @@ let value: GetOrganizationUsageResponse = {
         "<value>",
       ],
       language: "<value>",
-      numberOfOperations: 215507,
+      numberOfOperations: 713718,
       usedFeatures: [
         "<value>",
       ],
@@ -30,19 +40,5 @@ let value: GetOrganizationUsageResponse = {
     },
   ],
 };
-```
-
-## Supported Types
-
-### `shared.ErrorT`
-
-```typescript
-const value: shared.ErrorT = /* values here */
-```
-
-### `shared.OrganizationUsageResponse`
-
-```typescript
-const value: shared.OrganizationUsageResponse = /* values here */
 ```
 

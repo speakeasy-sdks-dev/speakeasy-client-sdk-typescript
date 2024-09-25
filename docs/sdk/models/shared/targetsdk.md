@@ -6,12 +6,12 @@
 import { TargetSDK } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: TargetSDK = {
-  generateGenLockId: "<value>",
+  generateGenLockId: "<id>",
   generateTarget: "<value>",
   id: "<id>",
-  lastEventCreatedAt: new Date("2022-01-23T00:54:32.021Z"),
-  lastEventId: "<value>",
-  lastEventInteractionType: "CONFIGURE",
+  lastEventCreatedAt: new Date("2022-09-29T03:34:36.716Z"),
+  lastEventId: "<id>",
+  lastEventInteractionType: "CI_EXEC",
 };
 ```
 

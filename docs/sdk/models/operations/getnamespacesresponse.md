@@ -1,33 +1,29 @@
 # GetNamespacesResponse
 
-## Example Usage
-
-```typescript
-import { GetNamespacesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetNamespacesResponse = {
-  items: [
-    {
-      createdAt: new Date("2022-02-04T21:29:28.328Z"),
-      id: "<id>",
-      name: "<value>",
-      updatedAt: new Date("2022-06-30T12:06:54.333Z"),
-    },
-  ],
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 226,
+};
 ```
 
 ### `shared.GetNamespacesResponse`
 
 ```typescript
-const value: shared.GetNamespacesResponse = /* values here */
+const value: shared.GetNamespacesResponse = {
+  items: [
+    {
+      createdAt: new Date("2024-11-24T10:40:28.013Z"),
+      id: "<id>",
+      name: "<value>",
+      updatedAt: new Date("2023-11-11T15:47:28.185Z"),
+    },
+  ],
+};
 ```
 

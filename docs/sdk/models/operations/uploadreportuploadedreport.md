@@ -8,7 +8,7 @@ OK
 import { UploadReportUploadedReport } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: UploadReportUploadedReport = {
-  url: "https://outrageous-subexpression.com/",
+  url: "https://right-heating.info",
 };
 ```
 

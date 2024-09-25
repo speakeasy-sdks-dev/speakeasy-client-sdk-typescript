@@ -6,13 +6,13 @@
 import { ApiKeyDetails } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: ApiKeyDetails = {
-  accountType: "scale-up",
+  accountType: "enterprise",
   enabledFeatures: [
     "<value>",
   ],
   orgSlug: "<value>",
   telemetryDisabled: false,
-  workspaceId: "<value>",
+  workspaceId: "<id>",
   workspaceSlug: "<value>",
 };
 ```

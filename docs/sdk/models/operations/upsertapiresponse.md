@@ -1,27 +1,27 @@
 # UpsertApiResponse
 
-## Example Usage
-
-```typescript
-import { UpsertApiResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: UpsertApiResponse = {
-  message: "<value>",
-  statusCode: 408,
-};
-```
 
 ## Supported Types
 
 ### `shared.Api`
 
 ```typescript
-const value: shared.Api = /* values here */
+const value: shared.Api = {
+  apiId: "<id>",
+  createdAt: new Date("2024-01-18T04:29:15.055Z"),
+  description: "doubtfully beneath abscond which exhausted",
+  updatedAt: new Date("2022-08-26T05:41:30.450Z"),
+  versionId: "<id>",
+  workspaceId: "<id>",
+};
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 103,
+};
 ```
 

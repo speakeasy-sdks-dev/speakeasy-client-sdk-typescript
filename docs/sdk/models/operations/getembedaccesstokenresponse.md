@@ -1,27 +1,22 @@
 # GetEmbedAccessTokenResponse
 
-## Example Usage
-
-```typescript
-import { GetEmbedAccessTokenResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetEmbedAccessTokenResponse = {
-  message: "<value>",
-  statusCode: 100,
-};
-```
 
 ## Supported Types
 
 ### `shared.EmbedAccessTokenResponse`
 
 ```typescript
-const value: shared.EmbedAccessTokenResponse = /* values here */
+const value: shared.EmbedAccessTokenResponse = {
+  accessToken: "<value>",
+};
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 100,
+};
 ```
 

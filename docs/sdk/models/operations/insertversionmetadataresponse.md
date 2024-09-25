@@ -1,27 +1,27 @@
 # InsertVersionMetadataResponse
 
-## Example Usage
-
-```typescript
-import { InsertVersionMetadataResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: InsertVersionMetadataResponse = {
-  message: "<value>",
-  statusCode: 102,
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 100,
+};
 ```
 
 ### `shared.VersionMetadata`
 
 ```typescript
-const value: shared.VersionMetadata = /* values here */
+const value: shared.VersionMetadata = {
+  apiId: "<id>",
+  createdAt: new Date("2023-10-10T06:45:28.118Z"),
+  metaKey: "<value>",
+  metaValue: "<value>",
+  versionId: "<id>",
+  workspaceId: "<id>",
+};
 ```
 

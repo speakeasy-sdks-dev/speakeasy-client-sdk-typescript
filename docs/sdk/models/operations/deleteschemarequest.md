@@ -6,9 +6,9 @@
 import { DeleteSchemaRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: DeleteSchemaRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
-  revisionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
+  revisionID: "<id>",
 };
 ```
 

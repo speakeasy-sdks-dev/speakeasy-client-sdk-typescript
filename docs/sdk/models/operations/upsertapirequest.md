@@ -6,11 +6,11 @@
 import { UpsertApiRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: UpsertApiRequest = {
-  apiID: "<value>",
+  apiID: "<id>",
   api: {
-    apiId: "<value>",
-    description: "Enhanced web-enabled hierarchy",
-    versionId: "<value>",
+    apiId: "<id>",
+    description: "obediently solicit barring drat skeletal without kielbasa",
+    versionId: "<id>",
   },
 };
 ```

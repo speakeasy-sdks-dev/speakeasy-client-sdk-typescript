@@ -11,7 +11,7 @@ let value: OrganizationUsageResponse = {
   allowedLanguages: [
     "<value>",
   ],
-  totalAllowedLanguages: 296140,
+  totalAllowedLanguages: 274823,
   usage: [
     {
       accessible: false,
@@ -22,7 +22,7 @@ let value: OrganizationUsageResponse = {
         "<value>",
       ],
       language: "<value>",
-      numberOfOperations: 118727,
+      numberOfOperations: 592231,
       usedFeatures: [
         "<value>",
       ],

@@ -6,8 +6,8 @@
 import { GetSchemaRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetSchemaRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
 };
 ```
 

@@ -7,7 +7,7 @@ Type of interaction.
 ```typescript
 import { InteractionType } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
-let value: InteractionType = "AUTHENTICATE";
+let value: InteractionType = "QUICKSTART";
 ```
 
 ## Values

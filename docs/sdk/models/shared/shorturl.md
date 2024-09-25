@@ -6,8 +6,8 @@
 import { ShortURL } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: ShortURL = {
-  fullUrl: "<value>",
-  shortUrl: "<value>",
+  fullUrl: "https://firm-impact.info",
+  shortUrl: "https://measly-experience.info/",
 };
 ```
 

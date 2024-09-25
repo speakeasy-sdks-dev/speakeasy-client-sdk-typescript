@@ -1,24 +1,20 @@
 # GithubCheckPublishingSecretsResponse
 
-## Example Usage
-
-```typescript
-import { GithubCheckPublishingSecretsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GithubCheckPublishingSecretsResponse = {};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 102,
+};
 ```
 
 ### `shared.GithubMissingPublishingSecretsResponse`
 
 ```typescript
-const value: shared.GithubMissingPublishingSecretsResponse = /* values here */
+const value: shared.GithubMissingPublishingSecretsResponse = {};
 ```
 

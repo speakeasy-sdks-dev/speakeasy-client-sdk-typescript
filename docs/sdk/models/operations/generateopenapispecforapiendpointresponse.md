@@ -1,27 +1,23 @@
 # GenerateOpenApiSpecForApiEndpointResponse
 
-## Example Usage
-
-```typescript
-import { GenerateOpenApiSpecForApiEndpointResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GenerateOpenApiSpecForApiEndpointResponse = {
-  currentSchema: "<value>",
-  newSchema: "<value>",
-};
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 101,
+};
 ```
 
 ### `shared.GenerateOpenApiSpecDiff`
 
 ```typescript
-const value: shared.GenerateOpenApiSpecDiff = /* values here */
+const value: shared.GenerateOpenApiSpecDiff = {
+  currentSchema: "<value>",
+  newSchema: "<value>",
+};
 ```
 

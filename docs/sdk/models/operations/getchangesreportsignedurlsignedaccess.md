@@ -8,7 +8,7 @@ OK
 import { GetChangesReportSignedUrlSignedAccess } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetChangesReportSignedUrlSignedAccess = {
-  url: "https://earnest-legend.com/",
+  url: "https://fruitful-typewriter.org/",
 };
 ```
 

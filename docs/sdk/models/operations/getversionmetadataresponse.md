@@ -1,33 +1,29 @@
 # GetVersionMetadataResponse
 
-## Example Usage
-
-```typescript
-import { GetVersionMetadataResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetVersionMetadataResponse = [
-  {
-    apiId: "<value>",
-    createdAt: new Date("2023-09-16T17:37:32.983Z"),
-    metaKey: "<value>",
-    metaValue: "<value>",
-    versionId: "<value>",
-    workspaceId: "<value>",
-  },
-];
-```
 
 ## Supported Types
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 101,
+};
 ```
 
 ### `shared.VersionMetadata[]`
 
 ```typescript
-const value: shared.VersionMetadata[] = /* values here */
+const value: shared.VersionMetadata[] = [
+  {
+    apiId: "<id>",
+    createdAt: new Date("2024-09-05T09:46:09.295Z"),
+    metaKey: "<value>",
+    metaValue: "<value>",
+    versionId: "<id>",
+    workspaceId: "<id>",
+  },
+];
 ```
 

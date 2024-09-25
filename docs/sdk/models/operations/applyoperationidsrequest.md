@@ -6,7 +6,7 @@
 import { ApplyOperationIDsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: ApplyOperationIDsRequest = {
-  xSessionId: "<value>",
+  xSessionId: "<id>",
 };
 ```
 

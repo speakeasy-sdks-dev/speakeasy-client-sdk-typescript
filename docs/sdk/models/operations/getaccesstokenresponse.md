@@ -1,28 +1,24 @@
 # GetAccessTokenResponse
 
-## Example Usage
-
-```typescript
-import { GetAccessTokenResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetAccessTokenResponse = {
-  accessToken: "<value>",
-  claims: {},
-  user: {},
-};
-```
 
 ## Supported Types
 
 ### `shared.AccessToken`
 
 ```typescript
-const value: shared.AccessToken = /* values here */
+const value: shared.AccessToken = {
+  accessToken: "<value>",
+  claims: {},
+  user: {},
+};
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 100,
+};
 ```
 

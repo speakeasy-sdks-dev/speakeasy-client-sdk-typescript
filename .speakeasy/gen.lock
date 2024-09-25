@@ -170,6 +170,8 @@ generatedFiles:
   - docs/sdk/models/shared/annotations.md
   - docs/sdk/models/shared/api.md
   - docs/sdk/models/shared/apiendpoint.md
+  - docs/sdk/models/shared/apiendpointinput.md
+  - docs/sdk/models/shared/apiinput.md
   - docs/sdk/models/shared/apikeydetails.md
   - docs/sdk/models/shared/auth.md
   - docs/sdk/models/shared/boundedrequest.md
@@ -229,6 +231,7 @@ generatedFiles:
   - docs/sdk/models/shared/v2descriptor.md
   - docs/sdk/models/shared/valuechange.md
   - docs/sdk/models/shared/versionmetadata.md
+  - docs/sdk/models/shared/versionmetadatainput.md
   - docs/sdk/models/shared/workflowdocument.md
   - docs/sdk/models/shared/workspace.md
   - docs/sdk/models/shared/workspaces.md
@@ -522,6 +525,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 623581}
+        "200": {}
   getAllApiVersions:
     speakeasy-default-get-all-api-versions:
       parameters:
@@ -596,6 +600,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 786917}
+        "200": {}
   getAllApiEndpoints:
     speakeasy-default-get-all-api-endpoints:
       parameters:
@@ -697,6 +702,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 477436}
+        "200": {}
   downloadSchemaRevision:
     speakeasy-default-download-schema-revision:
       parameters:
@@ -707,6 +713,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 859820}
+        "200": {}
   getSchema:
     speakeasy-default-get-schema:
       parameters:
@@ -776,6 +783,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 115307}
+        "200": {}
   getManifest:
     speakeasy-default-get-manifest:
       parameters:
@@ -841,6 +849,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 820828}
+        "200": {}
   getAccessToken:
     speakeasy-default-get-access-token:
       parameters:
@@ -878,6 +887,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 681461}
+        "200": {}
   getRequestFromEventLog:
     speakeasy-default-get-request-from-event-log:
       parameters:
@@ -937,6 +947,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 192607}
+        "200": {}
   getAction:
     speakeasy-default-get-action:
       parameters:
@@ -946,6 +957,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 252330}
+        "200": {}
   githubCheckPublishingSecrets:
     speakeasy-default-github-check-publishing-secrets:
       parameters:
@@ -954,6 +966,7 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 445560}
+        "200": {}
   githubStorePublishingSecrets:
     speakeasy-default-github-store-publishing-secrets:
       requestBody:
@@ -1035,9 +1048,11 @@ examples:
       responses:
         default:
           application/json: {"message": "<value>", "status_code": 824447}
+        "200": {}
   suggestOperationIDs:
     speakeasy-default-suggest-operation-I-ds:
       parameters:
+        query: {}
         header:
           x-session-id: "<value>"
       requestBody:

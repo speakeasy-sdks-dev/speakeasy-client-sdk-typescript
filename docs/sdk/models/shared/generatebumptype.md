@@ -7,7 +7,7 @@ Bump type of the lock file (calculated semver delta, custom change (manual relea
 ```typescript
 import { GenerateBumpType } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
-let value: GenerateBumpType = "graduate";
+let value: GenerateBumpType = "none";
 ```
 
 ## Values

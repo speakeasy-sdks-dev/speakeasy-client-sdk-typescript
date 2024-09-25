@@ -6,7 +6,7 @@
 import { GetRequestFromEventLogRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetRequestFromEventLogRequest = {
-  requestID: "<value>",
+  requestID: "<id>",
 };
 ```
 

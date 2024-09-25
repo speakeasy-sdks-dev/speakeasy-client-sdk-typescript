@@ -8,7 +8,7 @@ A response to configure GitHub code samples
 import { GithubConfigureCodeSamplesResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: GithubConfigureCodeSamplesResponse = {
-  codeSampleOverlayRegistryURL: "<value>",
+  codeSampleOverlayRegistryURL: "https://pertinent-godfather.org/",
   source: {
     location: "<value>",
   },

@@ -6,7 +6,7 @@
 import { RevokeEmbedAccessTokenRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: RevokeEmbedAccessTokenRequest = {
-  tokenID: "<value>",
+  tokenID: "<id>",
 };
 ```
 

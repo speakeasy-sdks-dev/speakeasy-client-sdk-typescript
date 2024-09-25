@@ -1,27 +1,29 @@
 # GetApisResponse
 
-## Example Usage
-
-```typescript
-import { GetApisResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
-
-let value: GetApisResponse = {
-  message: "<value>",
-  statusCode: 305,
-};
-```
 
 ## Supported Types
 
 ### `shared.Api[]`
 
 ```typescript
-const value: shared.Api[] = /* values here */
+const value: shared.Api[] = [
+  {
+    apiId: "<id>",
+    createdAt: new Date("2022-09-22T17:54:58.972Z"),
+    description: "woot foot whereas besides",
+    updatedAt: new Date("2022-02-02T19:48:48.046Z"),
+    versionId: "<id>",
+    workspaceId: "<id>",
+  },
+];
 ```
 
 ### `shared.ErrorT`
 
 ```typescript
-const value: shared.ErrorT = /* values here */
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 403,
+};
 ```
 

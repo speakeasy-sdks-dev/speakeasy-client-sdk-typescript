@@ -1,11 +1,21 @@
 # GetOrganizationsResponse
 
-## Example Usage
+
+## Supported Types
+
+### `shared.ErrorT`
 
 ```typescript
-import { GetOrganizationsResponse } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
+const value: shared.ErrorT = {
+  message: "<value>",
+  statusCode: 501,
+};
+```
 
-let value: GetOrganizationsResponse = [
+### `shared.Organization[]`
+
+```typescript
+const value: shared.Organization[] = [
   {
     accountType: "enterprise",
     id: "<id>",
@@ -13,19 +23,5 @@ let value: GetOrganizationsResponse = [
     telemetryDisabled: false,
   },
 ];
-```
-
-## Supported Types
-
-### `shared.ErrorT`
-
-```typescript
-const value: shared.ErrorT = /* values here */
-```
-
-### `shared.Organization[]`
-
-```typescript
-const value: shared.Organization[] = /* values here */
 ```
 

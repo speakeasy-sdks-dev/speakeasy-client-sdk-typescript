@@ -6,7 +6,7 @@
 import { GetWorkspaceEventsByTargetRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetWorkspaceEventsByTargetRequest = {
-  targetID: "<value>",
+  targetID: "<id>",
 };
 ```
 

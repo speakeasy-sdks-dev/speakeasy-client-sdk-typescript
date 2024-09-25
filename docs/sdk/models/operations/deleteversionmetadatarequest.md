@@ -6,8 +6,8 @@
 import { DeleteVersionMetadataRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: DeleteVersionMetadataRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
   metaKey: "<value>",
   metaValue: "<value>",
 };

@@ -6,7 +6,7 @@
 import { FetchPublishingPRsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: FetchPublishingPRsRequest = {
-  generateGenLockId: "<value>",
+  generateGenLockId: "<id>",
   org: "<value>",
   repo: "<value>",
 };

@@ -6,7 +6,7 @@
 import { GetAllApiEndpointsRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetAllApiEndpointsRequest = {
-  apiID: "<value>",
+  apiID: "<id>",
 };
 ```
 

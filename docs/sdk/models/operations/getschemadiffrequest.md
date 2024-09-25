@@ -6,10 +6,10 @@
 import { GetSchemaDiffRequest } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/operations";
 
 let value: GetSchemaDiffRequest = {
-  apiID: "<value>",
-  versionID: "<value>",
-  baseRevisionID: "<value>",
-  targetRevisionID: "<value>",
+  apiID: "<id>",
+  versionID: "<id>",
+  baseRevisionID: "<id>",
+  targetRevisionID: "<id>",
 };
 ```
 

@@ -8,16 +8,16 @@ An ApiEndpoint is a description of an Endpoint for an API.
 import { ApiEndpoint } from "@speakeasy-api/speakeasy-client-sdk-typescript/sdk/models/shared";
 
 let value: ApiEndpoint = {
-  apiEndpointId: "<value>",
-  apiId: "<value>",
-  createdAt: new Date("2024-09-04T09:11:49.246Z"),
-  description: "Versatile exuding project",
-  displayName: "Junior.Walsh8",
+  apiEndpointId: "<id>",
+  apiId: "<id>",
+  createdAt: new Date("2024-01-29T22:47:11.861Z"),
+  description: "rally wherever minus runny rough agreeable beneath",
+  displayName: "Kevon_Marvin",
   method: "<value>",
-  path: "/usr/obj",
-  updatedAt: new Date("2024-05-02T20:38:06.637Z"),
-  versionId: "<value>",
-  workspaceId: "<value>",
+  path: "/usr/src",
+  updatedAt: new Date("2023-02-07T20:20:50.747Z"),
+  versionId: "<id>",
+  workspaceId: "<id>",
 };
 ```
 
